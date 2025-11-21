@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "FitHer AI - Body Fat & BMI Calculator",
-  description: "Calculate your body fat percentage, BMI, and daily calorie needs - designed for women",
+  description: "Calculate your body fat percentage, BMI, and daily calories",
 };
 
 export default function RootLayout({
@@ -13,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
