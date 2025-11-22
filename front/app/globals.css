@@ -2,3 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 280 15% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 280 15% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 15% 20%;
+    --primary: 330 45% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 280 10% 96%;
+    --secondary-foreground: 280 15% 25%;
+    --muted: 280 8% 97%;
+    --muted-foreground: 280 8% 45%;
+    --accent: 330 25% 95%;
+    --accent-foreground: 280 15% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 280 12% 92%;
+    --input: 280 10% 97%;
+    --ring: 330 45% 50%;
+    --radius: 0.75rem;
+    --chart-1: 330 45% 50%;
+    --chart-2: 320 40% 55%;
+    --chart-3: 340 35% 60%;
+    --chart-4: 310 30% 65%;
+    --chart-5: 350 25% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
